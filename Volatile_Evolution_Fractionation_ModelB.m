@@ -169,17 +169,17 @@ end
 sumcheck=sum(Loss_Vol_vol)-SumVol_vol(end)
 %% Volume of volatiles produced at each step (%) relative to volume of system
 figure
-plot(MgO_melts4, 100*Loss_Vol_mass./vol_system, '-k')
+plot(MgO_melts4, 100*Loss_Vol_vol./vol_system, '-k')
 xlabel('MgO Melt')
 ylabel('Vol volatiles lost / vol system at each step')
 %% Total amount of volatiles produced up to each step relative to volume of system
 figure
-plot(MgO_melts4, 100*SumVol_mass./vol_system, '-k')
+plot(MgO_melts4, 100*SumVol_vol./vol_system, '-k')
 xlabel('MgO Melt')
 ylabel('Tot Vol volatiles lost / vol remaining system (%)')
 %% Total volume of volatiles produced relative to the initial volume of the system
 figure
-plot(MgO_melts4, 100*SumVol_mass./vol_system(1), '-k')
+plot(MgO_melts4, 100*SumVol_vol./vol_system(1), '-k')
 xlabel('MgO Melt')
 ylabel('Tot Vol volatiles lost / initial vol system')
 
